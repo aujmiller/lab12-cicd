@@ -52,7 +52,7 @@ class Server:
                 "example output": "Call GOAT at vibe check",
                 "description": "Example output of the genz anonymizer."
            })
-        
+
         @self.app.route("/genz", methods=["POST"])
         def genz_anonymize() -> Response:
             content = request.get_json()
